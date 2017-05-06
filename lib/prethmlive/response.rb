@@ -5,7 +5,7 @@ module Prethmlive
     end
 
     def parsed
-      JSON.parse(@raw.body).with_indifferent_access
+      JSON.parse(@raw.body)
     end
   end
 end

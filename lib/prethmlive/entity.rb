@@ -60,7 +60,7 @@ module Prethmlive
     end
 
     def initialize(attributes = {})
-      @attributes = (attributes || {}).with_indifferent_access
+      @attributes = (attributes || {})
     end
   end
 end
