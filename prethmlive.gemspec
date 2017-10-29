@@ -9,9 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["yensaki"]
   spec.email         = ["mov.an.double@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{OAuth2 API client}
+  spec.homepage      = ""
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -19,8 +18,7 @@ Gem::Specification.new do |spec|
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
   else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
+    raise "RubyGems 2.0 or newer is required to protect against "
   end
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
@@ -33,5 +31,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_dependency "oauth2"
+  spec.add_dependency "oauth2", "~> 1.4"
 end

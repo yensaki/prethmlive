@@ -1,8 +1,6 @@
 # Prethmlive
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/prethmlive`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+API client library
 
 ## Installation
 
@@ -22,7 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+class ApiUser < Prethmlive::Client::Base
+end
+
+user = ApiUser.new(token: 'ACCESS_TOKEN', refresh_token: 'REFRESH_TOKEN', expires_at: Time.now + 3600)
+user.get('/items.json')
+```
 
 ## Development
 
